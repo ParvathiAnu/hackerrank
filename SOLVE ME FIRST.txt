@@ -1,0 +1,13 @@
+def add_num(a,b):   #user-defined function
+   sum = a + b   #adding numbers
+   return sum   #return value
+
+# take inputs
+num1 = int(input())
+num2 = int(input())
+
+# calling function
+sum = add_num(num1, num2)
+
+# print sum of numbers
+print(sum)

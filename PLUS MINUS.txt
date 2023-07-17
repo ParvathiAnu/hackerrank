@@ -1,0 +1,16 @@
+n=int(input("enter"))
+arr=list(map(int,input().split(" ")))
+posfra=0
+negfra=0
+zfra=0
+for i in arr:
+    if i==0:
+        zfra+=1
+    elif i>0:
+        posfra+=1
+    else:
+        negfra+=1
+print(posfra/n)
+print(negfra/n)
+print(zfra/n)
+print("{:.6f}".format(zfra/n));        

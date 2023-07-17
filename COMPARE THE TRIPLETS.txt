@@ -1,0 +1,15 @@
+a=list(map(int,input().split(" ")))
+b=list (map(int,input().split(" ")))
+final=[]
+p=0
+q=0
+for i in range (0,3):
+    if a[i]==b[i]:
+        continue
+    elif a[i]>b[i]:
+        p+=1
+        final.append(p)
+    else:
+        q+=1
+        final.append(q)
+print(+p,+q)

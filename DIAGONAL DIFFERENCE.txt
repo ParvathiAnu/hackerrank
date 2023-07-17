@@ -1,0 +1,23 @@
+def diagonalDifference(arr):
+    n = len(arr)
+    diagonal_diff = 0
+
+    for i in range(n):
+        diagonal_diff += arr[i][i] - arr[i][n - i - 1]
+
+    return abs(diagonal_diff)
+
+# Get user input for the size of the square matrix
+n = int(input())
+
+# Create an empty matrix
+matrix = []
+for _ in range(n):
+    row = list(map(int, input().split()))
+    matrix.append(row)
+
+# Calculate the absolute diagonal difference
+result = diagonalDifference(matrix)
+
+# Print the result
+print(result)
