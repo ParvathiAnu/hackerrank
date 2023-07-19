@@ -1,0 +1,8 @@
+n= int(input())
+arr=list(map(int,input().split(" ")))
+count=0
+max=max(arr)
+for i in range (n):
+    if max ==arr[i]:
+        count+=1
+print(count)

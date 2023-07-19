@@ -1,0 +1,17 @@
+def timeConversion(s):
+    hour = int(s[:2])
+    minute = int(s[3:5])
+    second = int(s[6:8])
+    period = s[8:10]
+
+    if period == 'PM':
+        if hour != 12:
+            hour += 12
+    else:  # period == 'AM'
+        if hour == 12:
+            hour = 0
+
+    return f"{hour:02d}:{minute:02d}:{second:02d}"
+
+s=input()
+print(timeConversion(s))
